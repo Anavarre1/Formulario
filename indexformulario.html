@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./indexformulario.css">
+    <title>Formulario</title>
+</head>
+
+<body translate="no" onload="_l='t';">
+    <div id="page">
+        <div id="header" class="justify-content-center text-center">
+            <span class="tittle">BIBLIOTECA VIRGILIO BARCO</span>
+        </div>
+        <!-- contenedor -->
+        <br />
+        <br />
+        <div id="wrapper">
+            <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="">
+                <div class="w-100">
+                    <h2 class="justify-content-center text-center">ENCUESTA DE SATISFACCION</h2>
+                    <h5 class="justify-content-center text-justify">Cordial saludo, somos la Biblioteca Virgilio Barco, y con fines de mejora continua, le solicitamos amablemente ser participe de esta breve encuenta que solo tomara 5 minutos de su tiempo, donde abordaremos el tema de diseño y administracion.</h5>
+                </div>
+            </section>
+            <div id="body" class="row justify-content-center text-center">
+                <div class="card text-center" style="width: 70%; padding: 1.2em;">
+                    <h3>Datos personales</h3>
+                    <div class="card-body">
+                        <form class="needs-validation" method="get" action="accion.html">
+                            <div class="form-group">
+                                <input required type="text" class="form-control" id="names" placeholder="Nombres">
+                            </div>
+                            <div class="form-group">
+                                <input required type="text" class="form-control" id="lastnames" placeholder="Apellidos">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="address" placeholder="Direcci&oacute;n">
+                            </div>
+                            <div class="form-group">
+                                <input required type="email" class="form-control" id="emailAddress" placeholder="E-Mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder="Tel&eacute;fono">
+                            </div>
+                            <h3>Responde...</h3>
+                            <div class="form-group">
+                                <p>Para usted cual es la caracteristica favorita, que le ofrece la biblioteca es...</p>
+                                <select class="custom-select">
+                                    <option selected>Seleccione su respuesta</option>
+                                    <option value="1">La arquitectura</option>
+                                    <option value="2">La variedad de actividades</option>
+                                    <option value="3">Los recursos que ofrecen</option>
+                                    <option value="3">Las areas de entretenimiento</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <p>Su satisfaccion, referente a los recursos digitales de la biblioteca, al acceder a la base de busqueda,¿ es ?</p>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">Muy Satisecho
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">Satisecho
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">Algo Satisecho
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">Poco Satisecho
+                                </div>
+                                <div class="form-check-inline">
+                                    <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">Nada Satisecho
+                                </div>
+                            </div>
+                            <div class="form-group text-left">
+                                <p>
+                                    ¿Que te gustaría ver mejorado?
+                                    <span class="clue">(Marque todo lo que considere)</span>
+                                </p>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="ayudasInteractivas">
+                                    <label class="form-check-label" for="ayudasInteractivas">
+                                            Ayudas interactivas
+                                        </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="prestamoMateriales">
+                                    <label class="form-check-label" for="prestamoMateriales">
+                                            Prestamos de materiales
+                                        </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="arquitectura">
+                                    <label class="form-check-label" for="arquitectura">
+                                            Arquitectura del lugar
+                                        </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="espacio">
+                                    <label class="form-check-label" for="espacio">
+                                            Espacios
+                                        </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="actualizacionLibros">
+                                    <label class="form-check-label" for="actualizacionLibros">
+                                            Actualizacion de libros
+                                        </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="parqueadero">
+                                    <label class="form-check-label" for="parqueadero">
+                                            Los parqueaderos
+                                        </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <p>¿Recomendaria usted la biblioteca a sus amigos y/o conocidos?
+                                </p>
+                                <select class="custom-select">
+                                    <option selected>Seleccione su respuesta</option>
+                                    <option value="1">Por supuesto</option>
+                                    <option value="2">Tal vez</option>
+                                    <option value="3">No</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="comments">Sugerencias y/o comentarios</label>
+                                <textarea required rows="5" class="form-control" id="comments">
+                                </textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block float-md-right">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
